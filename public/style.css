@@ -1,0 +1,117 @@
+body {
+  display: flex;
+  width: 600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #fff;
+  background-image: linear-gradient(135deg, #f05f57 0%, #360940 100%);
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+  font-size: 16px;
+  flex-flow: column;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 600px;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist__item {
+  flex: 3;
+}
+
+.navlist__item--social {
+  flex: 1;
+}
+
+.navlist__link {
+  display: flex;
+  transition: color 0.2s;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navlist__link:hover {
+  color: #f1f1f1;
+}
+
+.navlist__link--faded-dark {
+  padding: 20px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1em;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.navlist__link--social {
+  color: rgba(255, 255, 255, 0.4);
+  padding: calc(20px - 0.23em);
+  font-size: 1.5em;
+}
+
+.take-input {
+  display: flex;
+  margin: 30px 30px 25px 30px;
+  flex-flow: row nowrap;
+}
+
+.take-input__input {
+  padding: 15px 15px;
+  resize: none;
+  color: #fff;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  background-color: #1c1c1c;
+  font-size: 20px;
+}
+
+.take-input__send-button {
+  width: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  outline: none;
+  background-color: #212121;
+}
+
+.take-input__send-button:active {
+  background-color: #e74c3c;
+}
+
+.results {
+  display: flex;
+  width: 100%;
+  margin-left: 1px;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+}
+
+.results__row {
+  display: flex;
+  padding: 10px 0;
+  flex-flow: row nowrap;
+  background-color: #1c1c1c;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+.results__number {
+  display: flex;
+  width: 50px;
+  margin: 0 5px 0 0;
+  color: #000;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #e74c3c;
+  justify-content: center;
+  align-items: center;
+}

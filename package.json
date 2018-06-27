@@ -1,0 +1,23 @@
+{
+  "name": "add-idea-to-mysql",
+  "description": "MySQL and Node test application.",
+  "license": "GPL-3.0",
+  "repository": "github:kutsan/add-idea-to-mysql",
+  "scripts": {
+    "start": "node server.js",
+    "test": ""
+  },
+  "dependencies": {
+    "body-parser": "~1.19.0",
+    "debug": "~4.1.1",
+    "dotenv": "~8.2.0",
+    "express": "~4.17.1",
+    "express-react-views": "~0.11.0",
+    "mysql": "~2.18.1",
+    "react": "~16.12.0",
+    "react-dom": "~16.12.0"
+  },
+  "devDependencies": {
+    "eslint": "~6.8.0"
+  }
+}
